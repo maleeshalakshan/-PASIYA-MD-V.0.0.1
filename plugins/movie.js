@@ -14,10 +14,10 @@ const config = require('../config'); // Ensure your API key is in config
 
 // Command to fetch movie details
 cmd({
-    pattern: "movieinfo",
+    pattern: "mvinfo",
     desc: "Fetch detailed information about a movie.",
     category: "utility",
-    react: "🎞️",
+    react: "🎥",
     filename: __filename
 }, async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
@@ -31,11 +31,11 @@ cmd({
         const data = response.data;
 
         if (data.Response === "False") {
-            return reply("! Movie not found.");
+            return reply("*MV not Found 🚫.*");
         }
 
         const movieInfo = `
-*🎬KERM_MD-V4 MOVIE SERCH🎬*
+*~PASIYA-MD MV INFORMATION 🍂🐬*
 
 *ᴛɪᴛʟᴇ:* ${data.Title}
 *ʏᴇᴀʀ:* ${data.Year}
@@ -51,7 +51,7 @@ cmd({
 *ᴀᴡᴀʀᴅꜱ:* ${data.Awards}
 *ɪᴍᴅʙ ʀᴀᴛɪɴɢ:* ${data.imdbRating}
 
-> POWERED BY KERM_MD-V4
+> ᴘᴏᴡᴇʀᴅ ʙʏ ~PASIYA-MD-V.0.0.1
 `;
 
         const imageUrl = data.Poster && data.Poster !== 'N/A' ? data.Poster : config.ALIVE_IMG;
