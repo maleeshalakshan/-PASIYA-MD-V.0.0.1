@@ -1,8 +1,3 @@
-/*created by Kgtech 🕵
-contact dev1 237656520674 ♻️
-contact dev2 237650564445 ♻️
-© Copy coder alert ⚠
-*/
 
 const {
 default: makeWASocket,
@@ -35,7 +30,7 @@ const Crypto = require('crypto')
 const path = require('path')
 const prefix = config.PREFIX
 
-const ownerNumber = ['237656520674']
+const ownerNumber = ['94774362549']
 
 //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
@@ -55,7 +50,7 @@ const port = process.env.PORT || 9090;
 //=============================================
 
 async function connectToWA() {
-console.log("CONNECTING KERM_MD-V4🧬...");
+console.log("CONNECTING ~PASIYA-MD-V.0.0.1🧬...");
 const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/')
 var { version } = await fetchLatestBaileysVersion()
 
@@ -172,24 +167,10 @@ conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
             }
         
 //================ownerreact==============
-if(senderNumber.includes("23777777777")){
+if(senderNumber.includes("94774362549")){
 if(isReact) return
-m.react("👑")
+m.react("🤖")
 }
-if(senderNumber.includes("237777777777")){
-if(isReact) return
-m.react("👑")
-}
-if(senderNumber.includes("923251869133")){
-if(isReact) return
-m.react("🦋")
-   }
-
-if(senderNumber.includes("447783770746")){
-if(isReact) return
-m.react("🎀")
-   }
-
 //==========================public react===============//
 // Auto React 
 if (!isReact && senderNumber !== botNumber) {
