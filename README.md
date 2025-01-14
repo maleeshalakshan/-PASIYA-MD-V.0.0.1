@@ -1,6 +1,6 @@
 ---------
 
-### <br>  ❖ ~PASIYA-MD-V.0.0.1
+### <br>  ~PASIYA-MD-V.0.0.1
 🔰 ~PASIA-MD WA BOT MADE BY PASINDU
 
 ----------
